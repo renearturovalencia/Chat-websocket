@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Socket.io</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+<script>
+function deshabilitar(){
+    document.getElementById('username').disabled=true;
+}
+</script>
+<body>  
+        <div id="chat-window">
+                <div id="output"></div>
+                <div id="actions"></div>
+        </div>
+        <center><input type="text" id="username" placeholder="Usuario"></center>
+        <center><input type="text" id="message" placeholder="Mensaje"></center>
+        <center><button id="send" onclick="deshabilitar()">Enviar</button></center>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
